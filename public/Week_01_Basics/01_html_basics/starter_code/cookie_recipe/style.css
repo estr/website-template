@@ -1,0 +1,26 @@
+/*- The background color for the page is #FFE
+- The color for the text reading "Nutrition Information" is #887
+- The link color is #900
+Bonus: The border on the page and around the image is black*/
+
+body {
+	background-color: #FFE;
+	font-family: helvetica, arial, san-serif;
+	border: #000 10px solid;
+	margin: 0;
+	padding: 30px;
+}
+img {
+	width: 400px;
+	border: solid 1px #000;
+	float: right;
+}
+a {
+	color: #900;
+}
+h3.disclaimer {
+	margin: 0 0 0 0;
+}
+.disclaimer {
+	color: #887;
+}
