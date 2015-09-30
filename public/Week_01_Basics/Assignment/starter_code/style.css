@@ -1,0 +1,50 @@
+body {
+	background: #f2f0d6;
+	max-width: 1000px;
+	margin: 0 auto;
+	font-family: georgia, serif;
+}
+
+/*     LAYOUT     */
+
+header {
+	max-width: 900px;
+}
+
+nav {
+	text-align: center;
+}
+nav ul {
+	padding-left: 0;
+}
+nav li {
+	display: inline-block;
+	margin: 0 1em 0 0;
+	padding: 0;
+}
+
+
+/*   TYPOGRAPHY   */
+
+h1, h2, h3, h4 {
+	font-family: helvetica, arial, san-serif;
+}
+h2 {
+	text-align: center;
+}
+h3 {
+	font-size: 16px;
+	margin-top: 60px;
+	text-transform: uppercase;
+}
+li {
+	list-style: square;
+}
+a {
+	color: green;
+}
+/*hr {
+	height: 1px;
+	color: #333;
+	border-style: none;
+}*/

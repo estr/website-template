@@ -2,9 +2,10 @@
 	padding: 0;
 }
 body {
-	background: #999;
+	background: #ff6;
 	max-width: 1000px;
 	margin: 0 auto;
+	font-family: helvetica, arial, san-serif;
 }
 nav {
 	text-align: center;
