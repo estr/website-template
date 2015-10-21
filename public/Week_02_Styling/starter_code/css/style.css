@@ -1,8 +1,8 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Project Name: Relaxr
+Client: Relaxr
+Author: Esther Butcher
+Developer @GA in SYD
 */
 
 
@@ -47,42 +47,43 @@ Developer @GA in NYC
 
 body {
 	color: #000;
-	font-size: 12px;
+	font-size: 16px;
 	line-height: 1.4;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif; /*Font only locally !! */
+}
+body.home {
 	background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
 	background-size: cover;
-	background-attachment: fixed;
+	background-attachment: fixed;	
 }
 h1 {
 	font-weight: 900;
-	font-size: 24px;
-	color: white;
+	font-size: 2em;
 }
 h2 {
-	font-size: 24px;
-	font-weight: 700;
-	color: white;
+	font-size: 1.5em;
+	font-weight: 600;
+	color: #033048;
 	margin-bottom: 1em;
 }
-.benefits h2 {
-	color: #033048;
-	font-weight: 600; 
+.hero h2 {
+	color: white;
+	font-weight: 700; 
+	margin-top: 1em;
 }
 
 p {
-	font-size: 13px;
 	font-weight: 200;
 }
 ul {
-	font-size: 13px;
+	font-size: 0.9em;
 	font-weight: 200;
 	list-style: disc;
 	list-style: outside;
 	margin: 20px;
 }
 blockquote {
-	font-size: 18px;
+	font-size: 1.3em;
 	text-align: center;
 	font-style: italic;
 	font-weight: 200;
@@ -91,61 +92,100 @@ blockquote strong {
 	font-weight: 700;
 }
 
+/* Links */
+
+a {
+	color: #033048;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1 a {
+	color: white;
+}
+h1 a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+nav a {
+	color: white;
+}
+nav a:hover, nav .active {
+	background-color: #f9e42e;
+	text-decoration: none;
+	color: #033048;
+}
+
+/* Button */
+
+button {
+	font-weight: 700;
+	font-size: 1em;
+	border-radius: 5px;
+	border: none;
+	padding: 10px 40px;
+	margin: 20px;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif; /*Font only locally !! */
+}
+button:hover {
+	background-color: #f0efef;
+	color: #033048;
+	cursor: pointer;
+}
+.primary {
+	background-color: #f9e42e;
+	margin-top: 50px;
+}
+.secondary {
+	background-color: #033048;
+	color: white;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
 
 /* Center the container */
-#container {
+.container {
 	width: 100%;
 	margin: 0 auto;
-	height: 500px;
-
+/*	height: 500px;
+*/	background-color: #f0efef;
+}
+.content {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 4em 0;
+}
+.center-text, .centre-text {
+	text-align: center;
 }
 section, header, footer {
 	margin: 0 auto;
 }
 header {
-	max-width: 800px;
-	padding: 2em;
+	background-color: #033048;
+	height: 84px;
 }
-.content {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 4em 2em;
-	text-align: center;
+header .content {
+	padding: 0;
 }
-.hero {
-	height: 30em;
-	width: 100%;
+.home header {
+	background-color: transparent;
 }
-.benefits {
-	background-color: #f0efef;
-}
-.benefits .content {
-	text-align: left;
-}
-.benefits img {
-	float: right;
-   margin: 3em 6em;
-}
-.benefits .left {
+h1.logo {
 	float: left;
-	width: 60%;
+	margin: 20px 0;
 }
-.testimonial {
-	background: url(../images/testimonial_bg.jpg);
-	color: #f0efef;
+nav {
+	float: right;
+	font-weight: 600;
+	margin: 31px 0;
 }
-.testimonial .content {
-		max-width: 500px;
-		padding: 7em 2em;
-}
-.signup {
-	background-color: #f9e42e;
-}
-.signup .content {
-	padding: 0em;
+nav a {
+	padding: 31px 20px;
+	width: 10%;
 }
 footer {
 	font-weight: 700;
@@ -162,30 +202,97 @@ footer h1 {
 	color: #f9e42e;
 }
 footer p {
-	font-size: 9px;
+	font-size: 0.7em;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-button {
-	font-weight: 900;
-	font-size: 14px;
-	border-radius: 5px;
-	border: none;
-	padding: 10px 40px;
-	margin: 20px;
+/* HOME PAGE */
+
+.hero {
+	height: 30em;
+	width: 100%;
 }
-button:hover {
+.benefits {
 	background-color: #f0efef;
-	color: #033048;
 }
-.primary {
+.benefits .content {
+	text-align: left;
+}
+.testimonial {
+	background: url(../images/testimonial_bg.jpg);
+	color: #f0efef;
+}
+.testimonial .content {
+	max-width: 500px;
+	padding: 7em 2em;
+}
+.signup {
 	background-color: #f9e42e;
+}
+.signup .content {
+	padding: 0em;
+}
+
+/* HOME PAGE */
+.home .container {
+	background-color: transparent;
+}
+.main {
+	width: 73%;
+	float: left;
+	margin-bottom: 3em;
+}
+.blog img {
+	width: 100%;
+}
+.blog {
+	border-bottom: 1px solid grey;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.more {
+	text-align: right;
+	margin-top: 20px;
+	display: block;
+	font-weight: 600;
+}
+.blog p {
 	margin-top: 50px;
 }
-.secondary {
-	background-color: #033048;
-	color: white;
+.blog h2 {
+	font-size: 2em;
+	margin-bottom: 15px;
+	line-height: 1.3em;
+}
+.blog p:first-letter {
+	font-size: 3.75em;
+	line-height: 36px;
+	margin-top: -23px;
+	padding-right: 8px;
+	float: left;
+	font-weight: 600;
+}
+aside.sidebar {
+	margin-left: 2%;
+	height: 200px;
+	width: 25%;
+	float: left;
+}
+aside section {
+	margin-bottom: 20px;
+}
+.sidebar img {
+	width: 100%;
+}
+.sidebar h3 {
+	font-weight: 700;
+	font-size: 1.5em;
+}
+.link-list ul {
+	margin: 0;
+	padding: 5px 0;
+}
+.link-list li {
+	list-style: none;
+	padding: 3px 0;
 }
 
